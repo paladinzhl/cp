@@ -31,19 +31,19 @@
    <extension
          point="org.eclipse.ui.views">
       <view
-            class="cn.com.cxsw.view.IndexView"
-            id="cn.com.cxsw.module.index.view.IndexView"
+            class="cn.com.cxsw.view.IndexMainView"
+            id="cn.com.cxsw.view.IndexMainView"
             name="首页">
       </view>
       <view
-            class="cn.com.cxsw.view.Test1View"
-            id="cn.com.cxsw.module.index.view.Test1View"
-            name="测试1">
+            class="cn.com.cxsw.view.IndexTopView"
+            id="cn.com.cxsw.view.IndexTopView"
+            name="首页包含（上）">
       </view>
       <view
-            class="cn.com.cxsw.view.Test2View"
-            id="cn.com.cxsw.module.index.view.Test2View"
-            name="New ViewPart">
+            class="cn.com.cxsw.view.IndexBottomView"
+            id="cn.com.cxsw.view.IndexBottomView"
+            name="首页包含（下）">
       </view>
    </extension>
 
