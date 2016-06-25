@@ -16,12 +16,15 @@ import cn.com.cxsw.action.DefinitionsAction;
 import cn.com.cxsw.action.ProbabilityIndexAction;
 import cn.com.cxsw.action.SoftIntroduceAction;
 import cn.com.cxsw.action.SystemCharacteristicAction;
+import org.eclipse.jface.action.Action;
 
 public class ApplicationActionBarAdvisor extends ActionBarAdvisor {
 	private DefinitionsAction da; // 名词解释
 	private ProbabilityIndexAction pia;// 概率指标
 	private SoftIntroduceAction sia; // 软件介绍
 	private SystemCharacteristicAction sca;// 系统特点
+	private Action action;
+	private Action action_1;
 
 	public ApplicationActionBarAdvisor(IActionBarConfigurer configurer) {
 		super(configurer);
@@ -29,23 +32,19 @@ public class ApplicationActionBarAdvisor extends ActionBarAdvisor {
 
 	protected void makeActions(IWorkbenchWindow window) {
 		da = new DefinitionsAction();
-		da.setImageDescriptor(ResourceManager.getImageDescriptor(
-				ApplicationActionBarAdvisor.class, "/cn/com/cxsw/images/3.png"));
+		da.setImageDescriptor(ResourceManager.getImageDescriptor(ApplicationActionBarAdvisor.class, "/cn/com/cxsw/images/mcjs.jpg"));
 		da.setText("名词解释");
 
 		pia = new ProbabilityIndexAction();
-		pia.setImageDescriptor(ResourceManager.getImageDescriptor(
-				ApplicationActionBarAdvisor.class, "/cn/com/cxsw/images/4.png"));
+		pia.setImageDescriptor(ResourceManager.getImageDescriptor(ApplicationActionBarAdvisor.class, "/cn/com/cxsw/images/glzb.jpg"));
 		pia.setText("概率指标");
 
 		sia = new SoftIntroduceAction();
-		sia.setImageDescriptor(ResourceManager.getImageDescriptor(
-				ApplicationActionBarAdvisor.class, "/cn/com/cxsw/images/1.png"));
+		sia.setImageDescriptor(ResourceManager.getImageDescriptor(ApplicationActionBarAdvisor.class, "/cn/com/cxsw/images/rjsm.jpg"));
 		sia.setText("软件介绍");
 
 		sca = new SystemCharacteristicAction();
-		sca.setImageDescriptor(ResourceManager.getImageDescriptor(
-				ApplicationActionBarAdvisor.class, "/cn/com/cxsw/images/2.png"));
+		sca.setImageDescriptor(ResourceManager.getImageDescriptor(ApplicationActionBarAdvisor.class, "/cn/com/cxsw/images/xttd.jpg"));
 		sca.setText("系统特点");
 	}
 
