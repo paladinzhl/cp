@@ -24,7 +24,7 @@ public class ApplicationWorkbenchWindowAdvisor extends WorkbenchWindowAdvisor {
 
 	public void preWindowOpen() {
 		IWorkbenchWindowConfigurer configurer = getWindowConfigurer();
-		configurer.setShellStyle(SWT.NO_TRIM | SWT.CENTER | SWT.NO_BACKGROUND);
+		configurer.setShellStyle(SWT.NO_TRIM | SWT.CENTER | SWT.NO_BACKGROUND |SWT.CLOSE | SWT.MIN);
 		configurer.setInitialSize(new Point(400, 300));
 		configurer.setShowCoolBar(true);
 		configurer.setShowStatusLine(true);
