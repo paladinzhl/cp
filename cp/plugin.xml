@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         id="application"
+         point="org.eclipse.core.runtime.applications">
+      <application>
+         <run
+               class="cn.com.cxsw.core.Application">
+         </run>
+      </application>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectives">
+      <perspective
+            name="RCP Perspective"
+            class="cn.com.cxsw.core.Perspective"
+            icon="cp.perspective1"
+            id="cp.perspective">
+      </perspective>
+   </extension>
+   <extension
+         point="org.eclipse.ui.editors">
+      <editor
+            class="cn.com.cxsw.module.index.IndexEditor"
+            id="cn.com.cxsw.module.index.IndexEditor"
+            name="首页">
+      </editor>
+   </extension>
+   <extension
+         point="org.eclipse.ui.views">
+      <view
+            class="cn.com.cxsw.view.IndexView"
+            id="cn.com.cxsw.module.index.view.IndexView"
+            name="首页">
+      </view>
+      <view
+            class="cn.com.cxsw.view.Test1View"
+            id="cn.com.cxsw.module.index.view.Test1View"
+            name="测试1">
+      </view>
+      <view
+            class="cn.com.cxsw.view.Test2View"
+            id="cn.com.cxsw.module.index.view.Test2View"
+            name="New ViewPart">
+      </view>
+   </extension>
+
+</plugin>
