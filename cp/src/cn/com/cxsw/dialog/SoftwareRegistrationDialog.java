@@ -6,24 +6,20 @@ import org.eclipse.swt.widgets.Shell;
 
 import cn.com.cxsw.utils.SetDialogLocation;
 import org.eclipse.swt.SWT;
-import org.eclipse.swt.widgets.Label;
-import org.eclipse.wb.swt.SWTResourceManager;
 
 /**
  *类说明
  *@author sgs
- *@description：系统特点
+ *@description软件注册
  */
-public class SystemCharacteristicDialog extends Dialog {
+public class SoftwareRegistrationDialog extends Dialog {
 
 	protected Object result;
 	protected Shell shell;
-
-	public SystemCharacteristicDialog(Shell parent, int style) {
+	public SoftwareRegistrationDialog(Shell parent, int style) {
 		super(parent, style);
-		setText("系统特点");
+		setText("软件注册");
 	}
-
 	public Object open() {
 		createContents();
 		shell.open();
@@ -38,14 +34,11 @@ public class SystemCharacteristicDialog extends Dialog {
 	}
 
 	private void createContents() {
-		shell = new Shell(getParent(), SWT.CLOSE | SWT.APPLICATION_MODAL);
-		shell.setSize(753, 513);
+		shell = new Shell(getParent(), SWT.DIALOG_TRIM | SWT.RESIZE | SWT.APPLICATION_MODAL);
+		shell.setSize(680, 524);
 		shell.setText(getText());
 		SetDialogLocation.setDialogLocation(shell);
-		SetDialogLocation.setDialogBgImg(SystemCharacteristicDialog.class, shell);
-		
-	
-		
-		
+		SetDialogLocation.setDialogBgImg(SoftwareRegistrationDialog.class, shell);
 	}
+
 }
