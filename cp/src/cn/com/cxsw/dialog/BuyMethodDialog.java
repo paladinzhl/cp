@@ -6,6 +6,7 @@ import org.eclipse.swt.widgets.Shell;
 import org.eclipse.swt.SWT;
 
 import cn.com.cxsw.utils.SetDialogLocation;
+import org.eclipse.swt.widgets.Label;
 
 /**
  *ÀàËµÃ÷
@@ -44,6 +45,18 @@ public class BuyMethodDialog extends Dialog {
 		shell.setText(getText());
 		SetDialogLocation.setDialogLocation(shell);
 		SetDialogLocation.setDialogBgImg(BuyMethodDialog.class, shell);
+		
+		Label lblNewLabel = new Label(shell, SWT.NONE);
+		lblNewLabel.setBounds(122, 122, 61, 17);
+		lblNewLabel.setText("New Label");
+		
+		Label lblNewLabel_1 = new Label(shell, SWT.NONE);
+		lblNewLabel_1.setBounds(388, 212, 61, 17);
+		lblNewLabel_1.setText("New Label");
+		
+		Label lblNewLabel_2 = new Label(shell, SWT.NONE);
+		lblNewLabel_2.setBounds(208, 315, 61, 17);
+		lblNewLabel_2.setText("New Label");
 	}
 
 }
