@@ -11,6 +11,9 @@ import cn.com.cxsw.utils.SetDialogLocation;
  *类说明
  *@author sgs
  *@description投注方法
+ *
+ *
+ *
  */
 public class BuyMethodDialog extends Dialog {
 
